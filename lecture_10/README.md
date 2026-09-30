@@ -61,7 +61,7 @@ PIO для LED, кнопок і перемикача. Один таймер за
 
 **5. Перевірка timing**
 
-Для Nios заданий clock 50 MHz. Тут видно додатний slack:
+Для Nios заданий clock 50 MHz. Тут видно додатній slack:
 setup +9,131 ns, hold +0,149 ns.
 
 ![Timing Analyzer](evidence/screenshots/05_nios_timing_summary.png)
@@ -98,5 +98,4 @@ LED залишається на місці. Швидкість можна змі
 
 Проєкти: [Nios V](task2_nios/nios_chaser.qpf), [HPS](task1_hps/hps_chaser.qpf).
 [Логи](evidence/logs/), [waveform WLF](evidence/nios_simulation.wlf),
-[VCD](evidence/nios_simulation.vcd.gz), [команди збірки](docs/BUILD.md)
-та [детальні результати](docs/REPORT.md).
+[VCD](evidence/nios_simulation.vcd.gz)
