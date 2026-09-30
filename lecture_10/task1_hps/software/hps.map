@@ -1,0 +1,63 @@
+     VMA      LMA     Size Align Out     In      Symbol
+ffff0000 ffff0000      3dc     4 .text
+ffff0000 ffff0000       34     4         task1_hps/software/start.o:(.init)
+ffff0000 ffff0000        0     1                 $a
+ffff0000 ffff0000        0     1                 _start
+ffff0028 ffff0028        0     1                 $d
+ffff0034 ffff0034        0     4         task1_hps/software/start.o:(.text)
+ffff0034 ffff0034      260     4         task1_hps/software/main.o:(.text)
+ffff0034 ffff0034        0     1                 $a
+ffff0034 ffff0034      260     1                 main
+ffff0294 ffff0294      138     4         task1_hps/software/chaser.o:(.text)
+ffff0294 ffff0294        0     1                 $a
+ffff0294 ffff0294       18     1                 chaser_init
+ffff02ac ffff02ac       78     1                 chaser_sample
+ffff0324 ffff0324       7c     1                 chaser_controls
+ffff03a0 ffff03a0       2c     1                 chaser_step
+ffff03cc ffff03cc       10     4         <internal>:(.rodata.cst16)
+ffff03dc ffff03dc       10     4 .ARM.exidx
+ffff03dc ffff03dc       10     4         <internal>:(.ARM.exidx)
+ffff03ec ffff03ec        0     1 .bss
+ffff03ec ffff03ec        0     1         . = ALIGN(4)
+ffff03ec ffff03ec        0     1         __bss_start = .
+ffff03ec ffff03ec        0     1         . = ALIGN(4)
+ffff03ec ffff03ec        0     1         __bss_end = .
+ffff03ec ffff03ec        0     1 __stack_top = 0xfffffff0
+ffff03ec ffff03ec        0     1 
+       0        0       2f     1 .ARM.attributes
+       0        0       2f     1         task1_hps/software/start.o:(.ARM.attributes)
+       0        0      1b5     1 .debug_loclists
+       0        0      11a     1         task1_hps/software/main.o:(.debug_loclists)
+     11a      11a       9b     1         task1_hps/software/chaser.o:(.debug_loclists)
+       0        0      2c2     1 .debug_abbrev
+       0        0      1ae     1         task1_hps/software/main.o:(.debug_abbrev)
+     1ae      1ae      114     1         task1_hps/software/chaser.o:(.debug_abbrev)
+       0        0      748     1 .debug_info
+       0        0      5da     1         task1_hps/software/main.o:(.debug_info)
+     5da      5da      16e     1         task1_hps/software/chaser.o:(.debug_info)
+       0        0       d5     1 .debug_rnglists
+       0        0       d5     1         task1_hps/software/main.o:(.debug_rnglists)
+       0        0      158     1 .debug_str_offsets
+       0        0       d0     1         task1_hps/software/main.o:(.debug_str_offsets)
+      d0       d0       88     1         task1_hps/software/chaser.o:(.debug_str_offsets)
+       0        0      2a9     1 .debug_str
+       0        0      2a9     1         <internal>:(.debug_str)
+       0        0       84     1 .debug_addr
+       0        0       64     1         task1_hps/software/main.o:(.debug_addr)
+      64       64       20     1         task1_hps/software/chaser.o:(.debug_addr)
+       0        0       74     1 .comment
+       0        0       74     1         <internal>:(.comment)
+       0        0       94     4 .debug_frame
+       0        0       28     4         task1_hps/software/main.o:(.debug_frame)
+      28       28       6c     4         task1_hps/software/chaser.o:(.debug_frame)
+       0        0      404     1 .debug_line
+       0        0      2cc     1         task1_hps/software/main.o:(.debug_line)
+     2cc      2cc      138     1         task1_hps/software/chaser.o:(.debug_line)
+       0        0       9d     1 .debug_line_str
+       0        0       9d     1         <internal>:(.debug_line_str)
+       0        0      110     4 .symtab
+       0        0      110     4         <internal>:(.symtab)
+       0        0       d7     1 .shstrtab
+       0        0       d7     1         <internal>:(.shstrtab)
+       0        0       89     1 .strtab
+       0        0       89     1         <internal>:(.strtab)

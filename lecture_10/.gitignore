@@ -1,0 +1,100 @@
+# =======================================================
+# Quartus Prime temporary & output files
+# =======================================================
+db/
+incremental_db/
+output_files/
+hc_output/
+q_output/
+greybox_tmp/
+hc_tmp/
+.qsys_edit/
+hps_isw_handoff/
+sys_description/
+
+# Compilation reports, netlists, and pin tables
+*.rpt
+*.chg
+*.htm
+*.eqn
+*.pin
+*.sof
+*.pof
+*.jam
+*.jbc
+*.ekp
+*.jic
+*.map.*
+*.fit.*
+*.asm.*
+*.tan.*
+*.sta.*
+*.eda.*
+*.merge.*
+*.sld
+*.smsg
+*.summary
+*.qws
+
+# =======================================================
+# Simulation temporary files (Questa / ModelSim / QSim)
+# =======================================================
+simulation/
+questa/
+modelsim/
+work/
+transcript
+vsim.wlf
+*.vstf
+*.wlf
+*.mti
+*.mpf
+
+# VWF generated testbenches (keep the original .vwf files!)
+*.vwf.vt
+*.vwf.vht
+*.vo
+*.vho
+
+# =======================================================
+# General OS & Editor files
+# =======================================================
+.DS_Store
+Thumbs.db
+*~
+*.bak
+*.orig
+.vscode/
+.idea/
+
+# =======================================================
+# Lecture 10: generated Platform Designer systems
+# Recreate these directories from the saved .qsys files.
+# =======================================================
+/task1_hps/hps_system/
+/task2_nios/nios_system/
+*.sopcinfo
+*.qdf
+*.qsys_edit*
+*.ver
+hps_sdram_p0_all_pins.txt
+
+# Build scripts and simulation working directories
+/build/
+sim_work/
+modelsim.ini
+*.o
+__pycache__/
+*.py[cod]
+graphify-out/
+*.logdb
+
+# Working copies of the Nios memory image
+# Keep the ELF/HEX/DAT/BIN/MAP files in task*/software/.
+/task2_nios/firmware.hex
+/task2_nios/firmware.dat
+
+# Keep saved homework results, including WLF, logs and reports.
+# This overrides the general report/waveform rules above.
+!/evidence/**
+/evidence/*_build_directory.txt
