@@ -1,0 +1,24 @@
+# Quartus generated files
+db/
+incremental_db/
+output_files/
+*.qws
+*.qdf
+*.smsg
+*.bak
+*.sof
+*.pof
+*.pin
+c5_pin_model_dump.txt
+
+# Simulation working files
+work/
+modelsim.ini
+transcript
+simulation/
+*.wlf
+
+# Keep saved reports, logs, waveforms and screenshots
+!**/evidence/**
+__pycache__/
+*~

@@ -1,0 +1,121 @@
+Reading pref.tcl
+
+# 2025.2
+
+# do run_sim.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 21:08:48 on Oct 05,2026
+# vlog -sv ../part3_plain/expr_plain.sv expr_pipelined.sv tb_expr.sv 
+# ** Note: (vlog-220) '/opt/intelFPGA/25.1/questa_fse/linux_x86_64/../modelsim.ini' is used as the ini file.
+# -- Compiling module expr_plain
+# -- Compiling module expr_pipelined
+# -- Compiling module tb_expr
+# 
+# Top level modules:
+# 	tb_expr
+# End time: 21:08:48 on Oct 05,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Note: (vsim-220) '/opt/intelFPGA/25.1/questa_fse/linux_x86_64/../modelsim.ini' is used as the ini file.
+# vsim -voptargs="+acc" -wlf evidence/tb_expr.wlf tb_expr 
+# Start time: 21:08:48 on Oct 05,2026
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
+# ** Note: (vopt-220) '/opt/intelFPGA/25.1/questa_fse/linux_x86_64/../modelsim.ini' is used as the ini file.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# //  Questa Altera Starter FPGA Edition-64
+# //  Version 2025.2 linux_x86_64 May 31 2025
+# //
+# // Unpublished work. Copyright 2025 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# Loading sv_std.std
+# Loading work.tb_expr(fast)
+# Loading work.expr_plain(fast)
+# Loading work.expr_pipelined(fast)
+# [PASS] cycle=3 plain=00000019 pipeline=00000000
+# [PASS] cycle=4 plain=000000a9 pipeline=00000019
+# [PASS] cycle=5 plain=fff80004 pipeline=000000a9
+# [PASS] cycle=6 plain=00000000 pipeline=fff80004
+# [PASS] cycle=7 plain=00190a01 pipeline=00000000
+# [PASS] cycle=8 plain=0000001c pipeline=00190a01
+# [PASS] cycle=9 plain=000b396c pipeline=0000001c
+# [PASS] cycle=10 plain=002c9ebc pipeline=000b396c
+# [PASS] cycle=11 plain=0064300c pipeline=002c9ebc
+# [PASS] cycle=12 plain=00b1ed5c pipeline=0064300c
+# [PASS] cycle=13 plain=0115d6ac pipeline=00b1ed5c
+# [PASS] cycle=14 plain=018febfc pipeline=0115d6ac
+# [PASS] cycle=15 plain=02202d4c pipeline=018febfc
+# [PASS] cycle=16 plain=02c69a9c pipeline=02202d4c
+# [PASS] cycle=17 plain=038333ec pipeline=02c69a9c
+# [PASS] cycle=18 plain=0455f93c pipeline=038333ec
+# [PASS] cycle=19 plain=053eea8c pipeline=0455f93c
+# [PASS] cycle=20 plain=063e07dc pipeline=053eea8c
+# [PASS] cycle=21 plain=0753512c pipeline=063e07dc
+# [PASS] cycle=22 plain=087ec67c pipeline=0753512c
+# [PASS] cycle=23 plain=09c067cc pipeline=087ec67c
+# [PASS] cycle=24 plain=0b18351c pipeline=09c067cc
+# [PASS] cycle=25 plain=0c862e6c pipeline=0b18351c
+# [PASS] cycle=26 plain=0e0a53bc pipeline=0c862e6c
+# [PASS] cycle=27 plain=0fa4a50c pipeline=0e0a53bc
+# [PASS] cycle=28 plain=1155225c pipeline=0fa4a50c
+# [PASS] cycle=29 plain=131bcbac pipeline=1155225c
+# [PASS] cycle=30 plain=14f8a0fc pipeline=131bcbac
+# [PASS] cycle=31 plain=16eba24c pipeline=14f8a0fc
+# [PASS] cycle=32 plain=18f4cf9c pipeline=16eba24c
+# [PASS] cycle=33 plain=1b1428ec pipeline=18f4cf9c
+# [PASS] cycle=34 plain=1d49ae3c pipeline=1b1428ec
+# [PASS] cycle=35 plain=1f955f8c pipeline=1d49ae3c
+# [PASS] cycle=36 plain=21f73cdc pipeline=1f955f8c
+# [PASS] cycle=37 plain=246f462c pipeline=21f73cdc
+# [PASS] cycle=38 plain=26fd7b7c pipeline=246f462c
+# [PASS] cycle=39 plain=29a1dccc pipeline=26fd7b7c
+# [PASS] cycle=40 plain=2c5c6a1c pipeline=29a1dccc
+# [PASS] cycle=41 plain=2f2d236c pipeline=2c5c6a1c
+# [PASS] cycle=42 plain=321408bc pipeline=2f2d236c
+# [PASS] cycle=43 plain=35111a0c pipeline=321408bc
+# [PASS] cycle=44 plain=3824575c pipeline=35111a0c
+# [PASS] cycle=45 plain=3b4dc0ac pipeline=3824575c
+# [PASS] cycle=46 plain=3e8d55fc pipeline=3b4dc0ac
+# [PASS] cycle=47 plain=41e3174c pipeline=3e8d55fc
+# [PASS] cycle=48 plain=454f049c pipeline=41e3174c
+# [PASS] cycle=49 plain=48d11dec pipeline=454f049c
+# [PASS] cycle=50 plain=4c69633c pipeline=48d11dec
+# [PASS] cycle=51 plain=5017d48c pipeline=4c69633c
+# [PASS] cycle=52 plain=53dc71dc pipeline=5017d48c
+# [PASS] cycle=53 plain=57b73b2c pipeline=53dc71dc
+# [PASS] cycle=54 plain=5ba8307c pipeline=57b73b2c
+# [PASS] cycle=55 plain=5faf51cc pipeline=5ba8307c
+# [PASS] cycle=56 plain=63cc9f1c pipeline=5faf51cc
+# [PASS] cycle=57 plain=6800186c pipeline=63cc9f1c
+# [PASS] cycle=58 plain=6c49bdbc pipeline=6800186c
+# [PASS] cycle=59 plain=70a98f0c pipeline=6c49bdbc
+# [PASS] cycle=60 plain=751f8c5c pipeline=70a98f0c
+# [PASS] cycle=61 plain=79abb5ac pipeline=751f8c5c
+# [PASS] cycle=62 plain=7e4e0afc pipeline=79abb5ac
+# [PASS] cycle=63 plain=83068c4c pipeline=7e4e0afc
+# [PASS] cycle=64 plain=87d5399c pipeline=83068c4c
+# [PASS] cycle=65 plain=8cba12ec pipeline=87d5399c
+# [PASS] cycle=66 plain=91b5183c pipeline=8cba12ec
+# [PASS] cycle=67 plain=96c6498c pipeline=91b5183c
+# [PASS] cycle=68 plain=9beda6dc pipeline=96c6498c
+# [PASS] cycle=69 plain=a12b302c pipeline=9beda6dc
+# [PASS] cycle=70 plain=a67ee57c pipeline=a12b302c
+# [PASS] cycle=71 plain=abe8c6cc pipeline=a67ee57c
+# [PASS] cycle=72 plain=abe8c6cc pipeline=abe8c6cc
+# [PASS] cycle=73 plain=abe8c6cc pipeline=abe8c6cc
+# [PASS] cycle=74 plain=abe8c6cc pipeline=abe8c6cc
+# ALL EXPRESSION TESTS PASSED: 72 paired checks
+# ** Note: $finish    : tb_expr.sv(61)
+#    Time: 648500 ps  Iteration: 0  Instance: /tb_expr
+# End time: 21:08:48 on Oct 05,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
