@@ -1,0 +1,31 @@
+# Generated Quartus and Platform Designer files
+/frame_system/
+db/
+incremental_db/
+output_files/
+.qsys_edit/
+*.qws
+*.qdf
+*.sopcinfo
+*.sof
+*.pof
+*.smsg
+*.logdb
+c5_pin_model_dump.txt
+
+# Working files; keep the final firmware in software/
+sim_work/
+unit_work/
+work/
+modelsim.ini
+transcript
+*.o
+/firmware.hex
+/firmware.dat
+*.wlf
+__pycache__/
+*~
+*.bak
+
+# Saved homework results
+!/evidence/**
