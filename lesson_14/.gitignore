@@ -1,0 +1,35 @@
+# Generated IP and Quartus working files
+/debug_ip/
+db/
+incremental_db/
+output_files/
+.qsys_edit/
+*.sopcinfo
+*.qws
+*.qdf
+*.smsg
+*.logdb
+*.bak
+c5_pin_model_dump.txt
+
+# Simulation working files
+sim_work/
+work/
+modelsim.ini
+transcript
+*.wlf
+__pycache__/
+graphify-out/
+*.py[cod]
+
+# Editor and temporary files
+*~
+*.orig
+*.tmp
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Keep selected results, including the final FPGA image
+!/evidence/**

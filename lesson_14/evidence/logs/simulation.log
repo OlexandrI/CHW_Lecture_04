@@ -1,0 +1,149 @@
+Reading pref.tcl
+
+# 2025.2
+
+# do ../scripts/simulate.do
+# Prepared vendor interfaces; analyzer capture and host JTAG are not simulated.
+# ../debug_ip/simulation
+# [exec] file_copy
+# List Of Command Line Aliases
+# 
+# file_copy                                         -- Copy ROM/RAM files to simulation directory
+# 
+# dev_com                                           -- Compile device library files
+# 
+# com                                               -- Compile the design files in correct order
+# 
+# elab                                              -- Elaborate top level design
+# 
+# elab_debug                                        -- Elaborate the top level design with -voptargs=+acc option
+# 
+# ld                                                -- Compile all the design files and elaborate the top level design
+# 
+# ld_debug                                          -- Compile all the design files and elaborate the top level design with -voptargs=+acc
+# 
+# 
+# 
+# List Of Variables
+# 
+# TOP_LEVEL_NAME                                    -- Top level module name.
+#                                                      For most designs, this should be overridden
+#                                                      to enable the elab/elab_debug aliases.
+# 
+# SYSTEM_INSTANCE_NAME                              -- Instantiated system module name inside top level module.
+# 
+# QSYS_SIMDIR                                       -- Platform Designer base simulation directory.
+# 
+# QUARTUS_INSTALL_DIR                               -- Quartus installation directory.
+# 
+# USER_DEFINED_COMPILE_OPTIONS                      -- User-defined compile options, added to com/dev_com aliases.
+# 
+# USER_DEFINED_ELAB_OPTIONS                         -- User-defined elaboration options, added to elab/elab_debug aliases.
+# 
+# USER_DEFINED_VHDL_COMPILE_OPTIONS                 -- User-defined vhdl compile options, added to com/dev_com aliases.
+# 
+# USER_DEFINED_VERILOG_COMPILE_OPTIONS              -- User-defined verilog compile options, added to com/dev_com aliases.
+# [exec] dev_com
+# [exec] com
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 21:40:22 on Oct 20,2026
+# vlog ../debug_ip/simulation/submodules/altsource_probe.v -work vio 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# -- Compiling module altsource_probe
+# 
+# Top level modules:
+# 	altsource_probe
+# End time: 21:40:22 on Oct 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 21:40:22 on Oct 20,2026
+# vlog ../debug_ip/simulation/submodules/sld_signaltap.v -work ila 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# -- Compiling module sld_signaltap
+# 
+# Top level modules:
+# 	sld_signaltap
+# End time: 21:40:22 on Oct 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 21:40:22 on Oct 20,2026
+# vlog ../debug_ip/simulation/debug_ip.v 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# -- Compiling module debug_ip
+# 
+# Top level modules:
+# 	debug_ip
+# End time: 21:40:22 on Oct 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 21:40:22 on Oct 20,2026
+# vlog -sv ../rtl/digit_debounce.sv ../rtl/lock_controller.sv ../rtl/ila_0.sv ../rtl/debug_top.sv ../tests/tb_debug.sv 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# -- Compiling module digit_debounce
+# -- Compiling module lock_controller
+# -- Compiling module ila_0
+# -- Compiling module debug_top
+# -- Compiling module tb_debug
+# 
+# Top level modules:
+# 	tb_debug
+# End time: 21:40:22 on Oct 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# tb_debug
+# -voptargs=+acc -wlf ../evidence/debug_simulation.wlf
+# [exec] elab
+# ** Note: (vsim-220) 'modelsim.ini' is used as the ini file.
+# vsim -t ps -voptargs="+acc" -wlf ../evidence/debug_simulation.wlf -L work -L work_lib -L vio -L ila -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver tb_debug 
+# Start time: 21:40:22 on Oct 20,2026
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
+# ** Note: (vopt-220) 'modelsim.ini' is used as the ini file.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# //  Questa Altera Starter FPGA Edition-64
+# //  Version 2025.2 linux_x86_64 May 31 2025
+# //
+# // Unpublished work. Copyright 2025 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# Loading sv_std.std
+# Loading work.tb_debug(fast)
+# Loading work.debug_top(fast)
+# Loading work.lock_controller(fast)
+# Loading work.digit_debounce(fast)
+# Loading work.ila_0(fast)
+# Loading work.debug_ip(fast)
+# Loading ila.sld_signaltap(fast)
+# Loading vio.altsource_probe(fast)
+# PASS  1 [reset] reset leaves the lock closed
+# PASS  2 [reset] five groups: 4+4+2+2+1 = 13 bits
+# PASS  3 [wrong_attempt] first digit -> WAIT_D2
+# PASS  4 [wrong_attempt] wrong digit -> LOCKED, no unlock event
+# PASS  5 [wrong_attempt] stable idle stops capture after the context window
+# PASS  6 [physical_code] physical digit is filtered and probed
+# PASS  7 [physical_code] second digit -> WAIT_D3
+# PASS  8 [physical_code] third digit -> UNLOCKED, one rare event
+# PASS  9 [physical_code] post-trigger context remains enabled
+# PASS 10 [physical_code] context covers the 512-sample centered buffer tail
+# PASS 11 [physical_code] capture stops, unlocked state is retained
+# PASS 12 [physical_code] holding UNLOCKED does not create new events
+# PASS 13 [vio_control] VIO source overrides physical digit 9
+# PASS 14 [vio_control] VIO second digit -> WAIT_D3
+# PASS 15 [vio_control] VIO sequence opens the same FSM
+# PASS 16 [vio_control] VIO reset is active high and asynchronous
+# PASS 17 [capture_gate] disabled capture does not stop the design
+# PASS 18 [capture_gate] data still moves with capture disabled
+# PASS 19 [capture_gate] capture resumes for the next unlock
+# PASS 20 [capture_gate] qualifier records events and suppresses long idle
+# ALL DEBUG TESTS PASSED: 20 checks, 3 unlock events, 1697 qualified samples
+# ** Note: $finish    : ../tests/tb_debug.sv(104)
+#    Time: 42800 ns  Iteration: 1  Instance: /tb_debug
+# End time: 21:40:22 on Oct 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
