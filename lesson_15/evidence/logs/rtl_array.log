@@ -1,0 +1,97 @@
+Reading pref.tcl
+
+# 2025.2
+
+# do ../scripts/simulate_array.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 22:51:13 on Oct 20,2026
+# vlog ../array_hls/moving_max.v ../tests/tb_array.v 
+# ** Note: (vlog-220) '/opt/intelFPGA/25.1/questa_fse/linux_x86_64/../modelsim.ini' is used as the ini file.
+# -- Compiling module constant_value
+# -- Compiling module register_SARSE
+# -- Compiling module register_STD
+# -- Compiling module UIdata_converter_FU
+# -- Compiling module IUdata_converter_FU
+# -- Compiling module UUdata_converter_FU
+# -- Compiling module read_cond_FU
+# -- Compiling module max_expr_FU
+# -- Compiling module ui_eq_expr_FU
+# -- Compiling module ui_lshift_expr_FU
+# -- Compiling module ui_plus_expr_FU
+# -- Compiling module ui_pointer_plus_expr_FU
+# -- Compiling module in_bambu_artificial_ParmMgr_modgen
+# -- Compiling module out_bambu_artificial_ParmMgr_modgen
+# -- Compiling module MUX_GATE
+# -- Compiling module datapath__Z10moving_maxPiS_
+# -- Compiling module controller__Z10moving_maxPiS_
+# -- Compiling module flipflop_AR
+# -- Compiling module __Z10moving_maxPiS_
+# -- Compiling module _Z10moving_maxPiS_
+# -- Compiling module tb_array
+# 
+# Top level modules:
+# 	tb_array
+# End time: 22:51:13 on Oct 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Note: (vsim-220) '/opt/intelFPGA/25.1/questa_fse/linux_x86_64/../modelsim.ini' is used as the ini file.
+# vsim -wlf ../evidence/array_simulation.wlf -voptargs="+acc" work.tb_array 
+# Start time: 22:51:13 on Oct 20,2026
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# //  Questa Altera Starter FPGA Edition-64
+# //  Version 2025.2 linux_x86_64 May 31 2025
+# //
+# // Unpublished work. Copyright 2025 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# Loading work.tb_array(fast)
+# Loading work._Z10moving_maxPiS_(fast)
+# Loading work.__Z10moving_maxPiS_(fast)
+# Loading work.controller__Z10moving_maxPiS_(fast)
+# Loading work.datapath__Z10moving_maxPiS_(fast)
+# Loading work.MUX_GATE(fast)
+# Loading work.UUdata_converter_FU(fast)
+# Loading work.constant_value(fast)
+# Loading work.constant_value(fast__1)
+# Loading work.constant_value(fast__2)
+# Loading work.constant_value(fast__3)
+# Loading work.constant_value(fast__4)
+# Loading work.constant_value(fast__5)
+# Loading work.UUdata_converter_FU(fast__1)
+# Loading work.ui_pointer_plus_expr_FU(fast)
+# Loading work.in_bambu_artificial_ParmMgr_modgen(fast)
+# Loading work.max_expr_FU(fast)
+# Loading work.ui_plus_expr_FU(fast)
+# Loading work.UUdata_converter_FU(fast__2)
+# Loading work.read_cond_FU(fast)
+# Loading work.ui_lshift_expr_FU(fast)
+# Loading work.UIdata_converter_FU(fast)
+# Loading work.IUdata_converter_FU(fast)
+# Loading work.ui_eq_expr_FU(fast)
+# Loading work.out_bambu_artificial_ParmMgr_modgen(fast)
+# Loading work.register_SARSE(fast)
+# Loading work.register_STD(fast)
+# Loading work.register_SARSE(fast__1)
+# Loading work.flipflop_AR(fast)
+# PASS array frame 0: 64 reads, 64 writes, cycles=449
+# PASS array frame 1: 64 reads, 64 writes, cycles=449
+# PASS array frame 2: 64 reads, 64 writes, cycles=449
+# PASS array frame 3: 64 reads, 64 writes, cycles=449
+# PASS array frame 4: 64 reads, 64 writes, cycles=449
+# PASS array frame 5: 64 reads, 64 writes, cycles=449
+# PASS array frame 6: 64 reads, 64 writes, cycles=449
+# PASS array frame 7: 64 reads, 64 writes, cycles=449
+# ALL ARRAY TESTS PASSED: 512 samples, each input read once
+# ** Note: $finish    : ../tests/tb_array.v(70)
+#    Time: 36520 ns  Iteration: 1  Instance: /tb_array
+# End time: 22:51:13 on Oct 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0

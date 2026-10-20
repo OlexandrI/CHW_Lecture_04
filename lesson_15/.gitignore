@@ -1,0 +1,49 @@
+# Quartus and Platform Designer working files
+db/
+incremental_db/
+output_files/
+HLS_output/
+moving_max_system/
+.qsys_edit/
+*.sopcinfo
+*.qws
+*.qdf
+*.smsg
+*.logdb
+c5_pin_model_dump.txt
+synthesize_Synthesis_*.sh
+
+# Test working files
+sim_plain/
+sim_pipeline/
+sim_array/
+software_work/
+work/
+modelsim.ini
+transcript
+*.wlf
+__pycache__/
+*.py[cod]
+graphify-out/
+
+# Editor files
+*.bak
+*.orig
+*.tmp
+*~
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Saved results
+!/evidence/**
+
+# Results that can be rebuilt
+/evidence/bitstreams.zip
+/evidence/bitstreams/
+/evidence/logs/bitstreams_sha256.txt
+/evidence/reports/*.asm.rpt
+/evidence/reports/*.flow.rpt
+/evidence/reports/*.map.summary
+/evidence/reports/*.sta.rpt

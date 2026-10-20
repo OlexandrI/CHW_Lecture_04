@@ -1,0 +1,31 @@
+# moving_max_array.qsf
+# Moving maximum on Cyclone V
+# OlexandrI.B
+
+set_global_assignment -name FAMILY "Cyclone V"
+set_global_assignment -name DEVICE 5CSEMA5F31C6
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name NUM_PARALLEL_PROCESSORS 2
+set_global_assignment -name SDC_FILE timing.sdc
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
+set_global_assignment -name TOP_LEVEL_ENTITY _Z10moving_maxPiS_
+set_global_assignment -name VERILOG_FILE moving_max.v
+set_instance_assignment -name VIRTUAL_PIN ON -to "reset"
+set_instance_assignment -name VIRTUAL_PIN ON -to "start_port"
+set_instance_assignment -name VIRTUAL_PIN ON -to "done_port"
+set_instance_assignment -name VIRTUAL_PIN ON -to "in_q0[*]"
+set_instance_assignment -name VIRTUAL_PIN ON -to "in_q1[*]"
+set_instance_assignment -name VIRTUAL_PIN ON -to "in_address0[*]"
+set_instance_assignment -name VIRTUAL_PIN ON -to "in_address1[*]"
+set_instance_assignment -name VIRTUAL_PIN ON -to "in_ce0"
+set_instance_assignment -name VIRTUAL_PIN ON -to "in_ce1"
+set_instance_assignment -name VIRTUAL_PIN ON -to "out_address0[*]"
+set_instance_assignment -name VIRTUAL_PIN ON -to "out_address1[*]"
+set_instance_assignment -name VIRTUAL_PIN ON -to "out_ce0"
+set_instance_assignment -name VIRTUAL_PIN ON -to "out_ce1"
+set_instance_assignment -name VIRTUAL_PIN ON -to "out_we0"
+set_instance_assignment -name VIRTUAL_PIN ON -to "out_we1"
+set_instance_assignment -name VIRTUAL_PIN ON -to "out_d0[*]"
+set_instance_assignment -name VIRTUAL_PIN ON -to "out_d1[*]"
+
+set_global_assignment -name LAST_QUARTUS_VERSION "25.1std.0 Lite Edition"
