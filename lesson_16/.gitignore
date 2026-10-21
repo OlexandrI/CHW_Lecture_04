@@ -1,0 +1,39 @@
+# Quartus and Platform Designer
+/db/
+/incremental_db/
+/output_files/
+/ip_only/db/
+/ip_only/incremental_db/
+/ip_only/output_files/
+/metronome_system/
+/.qsys_edit/
+*.sopcinfo
+*.qws
+*.qdf
+*.smsg
+*_pin_model_dump.txt
+
+# Software intermediates; keep ELF and the hardware memory image
+/software/*.o
+/software/*.bin
+/software/*.map
+/software/*.hex
+/software/*.dat
+
+# Simulation; keep the selected waveforms in results
+/unit_work/
+/sim_work/
+/gui_pass/
+/gui_fail/
+modelsim.ini
+transcript
+*.wlf
+!/results/unit_pass.wlf
+!/results/system.wlf
+
+# Local files
+/graphify-out/
+__pycache__/
+*.pyc
+*~
+*.bak

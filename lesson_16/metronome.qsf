@@ -1,0 +1,18 @@
+# metronome.qsf
+# Nios V metronome for Cyclone V
+# OlexandrI.B
+
+set_global_assignment -name FAMILY "Cyclone V"
+set_global_assignment -name DEVICE 5CEFA4F23C6
+set_global_assignment -name TOP_LEVEL_ENTITY metronome_top
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name NUM_PARALLEL_PROCESSORS 4
+set_global_assignment -name VERILOG_FILE ip/metronome_top.v
+set_global_assignment -name QIP_FILE metronome_system/synthesis/metronome_system.qip
+set_global_assignment -name SDC_FILE timing.sdc
+set_global_assignment -name IP_SEARCH_PATHS "ip/**/*"
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
+set_instance_assignment -name VIRTUAL_PIN ON -to reset_n
+set_instance_assignment -name VIRTUAL_PIN ON -to tick
+
+set_global_assignment -name LAST_QUARTUS_VERSION "25.1std.0 Lite Edition"
